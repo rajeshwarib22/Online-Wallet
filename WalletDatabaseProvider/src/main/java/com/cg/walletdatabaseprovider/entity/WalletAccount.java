@@ -24,6 +24,15 @@ public class WalletAccount {
 	public WalletAccount() {
 		super();
 	}
+	
+
+	public WalletAccount(int userId, double accountBalance, String status) {
+		super();
+		this.userId = userId;
+		this.accountBalance = accountBalance;
+		this.status = status;
+	}
+
 
 	public int getUserId() {
 		return userId;
@@ -57,12 +66,5 @@ public class WalletAccount {
 		this.accountBalance = accountBalance;
 	}
 
-	
-
-	@Override
-	public String toString() {
-		return "WalletAccount [userId=" + userId + ", accountId=" + accountId + ", accountBalance=" + accountBalance
-				+ ", status=" + status+ "]";
-	}
 
 }
